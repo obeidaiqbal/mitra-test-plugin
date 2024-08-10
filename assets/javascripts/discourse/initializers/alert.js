@@ -2,7 +2,7 @@ export default {
   name: 'alert',
   initialize() {
     function runMessageBox() {
-      alert('Button Test');
+      alert('Click!');
     }
     document.addEventListener("DOMContentLoaded", function() {
       const button = document.querySelector('.match-tab');
