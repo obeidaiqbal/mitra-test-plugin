@@ -1,6 +1,14 @@
 export default {
   name: 'alert',
   initialize() {
-    alert('alert boxes are annoying!');
+    function runMessageBox() {
+      alert('Button Test');
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+      const button = document.querySelector('.match-tab');
+      if (button) {
+        button.addEventListener('click', runMessageBox);
+      }
+    });
   }
 };
